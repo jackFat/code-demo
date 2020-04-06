@@ -1,5 +1,4 @@
 const env = process.env.NODE_ENV //获取环境变量
-
 // mysql 配置
 let MYSQL_CONF
 
@@ -23,6 +22,4 @@ if (env === 'production') {
   }
 }
 
-module.exports = {
-  MYSQL_CONF
-}
+module.exports = MYSQL_CONF
